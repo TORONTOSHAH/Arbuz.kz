@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbuz.kz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3860/3860174.png"> 
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Arbuz.kz</a>
+            <div class="nav-links">
+                <a href="index.html" class="home">Главная</a>
+                <a href="location.html" class="location">Локация</a>
+                <a href="contacn.html" class="contact-us">Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>Сочные арбузы с грядки</h1>
+            <p>Закажите прямо сейчас и наслаждайтесь летом!</p>
+            <a href="#order" class="cta-button">Заказать</a>
+        </div>
+    </section>
+    <main>
+        <section class="order-section" id="order">
+            <h2>Выберите свой арбуз</h2>
+            <form class="order-form">
+                <div class="order-cards">
+                    <div class="order-card">
+                        <h3>Выбор места на грядке</h3>
+                        <div id="garden-grid" class="garden-grid"></div>
+                        <div class="selected-details">
+                            <label><i class="fas fa-list-ol"></i> Ряд на грядке:</label>
+                            <input type="text" id="row" readonly>
+                            <label><i class="fas fa-map-marker-alt"></i> Место на грядке:</label>
+                            <input type="text" id="place" readonly>
+                            <label><i class="fas fa-weight"></i> Вес (кг):</label>
+                            <input type="text" id="weight" readonly>
+                            <label><i class="fas fa-leaf"></i> Статус:</label>
+                            <input type="text" id="status" readonly>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <h3>Детали заказа</h3>
+                        <label for="quantity"><i class="fas fa-shopping-basket"></i> Количество (1-3):</label>
+                        <input type="number" id="quantity" min="1" max="3">
+                        <span id="quantity-error" class="error-message"></span>
+                        <label for="address"><i class="fas fa-home"></i> Адрес доставки:</label>
+                        <input type="text" id="address">
+                        <span id="address-error" class="error-message"></span>
+                        <label for="phone"><i class="fas fa-phone"></i> Телефон:</label>
+                        <input type="tel" id="phone" placeholder="77071234567">
+                        <span id="phone-error" class="error-message"></span>
+                        <label for="delivery-date"><i class="fas fa-calendar"></i> Дата и время:</label>
+                        <input type="datetime-local" id="delivery-date">
+                        <span id="delivery-date-error" class="error-message"></span>
+                        <label>
+                            <input type="checkbox" id="cut"> <i class="fas fa-cut"></i> Порезать дольками (+100 тенге)
+                        </label>
+                        <p>Итоговая цена: <span id="total-price">0</span> тенге</p>
+                        <button type="submit">Оформить заказ</button>
+                    </div>
+                </div>
+                <p id="error-message" class="error" style="display: none;"></p>
+            </form>
+        </section>
+        <div class="order-controls">
+            <button type="button" id="refresh-orders">Обновить</button>
+            <button type="button" id="delete-order">Удалить последний</button>
+        </div>
+        <section class="order-history">
+            <h2>История заказов</h2>
+            <div id="orders-list" class="order-history-list"></div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h4>О нас</h4>
+                <p>Arbuz.kz — свежие арбузы прямо с грядки. Мы доставляем только лучшее качество!</p>
+            </div>
+            <div class="footer-section contact">
+                <h4>Контакты</h4>
+                <p><a href="mailto:info@arbuz.kz">info@arbuz.kz</a></p>
+                <p>Тел: +7 (707) 123-45-67</p>
+            </div>
+            <div class="footer-section social">
+                <h4>Мы в соцсетях</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section legal">
+                <p>&copy; 2025 Arbuz.kz. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

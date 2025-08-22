@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Arbuz.kz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/3860/3860174.png">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">Arbuz.kz</a>
+            <div class="nav-links">
+                <a href="index.html" class="home">Главная</a>
+                <a href="location.html" class="location">Локация</a>
+                <a href="contacn.html" class="contact-us">Контакты</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <h1>Свяжитесь с нами</h1>
+            <p>Мы всегда рады вашим вопросам и предложениям!</p>
+        </div>
+    </section>
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Наша контактная информация</h2>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@arbuz.kz">info@arbuz.kz</a></p>
+                    <p><i class="fas fa-phone"></i> +7 (707) 123-45-67</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Алматы, ул. Арбузная 1</p>
+                    <div class="social-icons">
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Напишите нам</h2>
+                    <form id="contact-form">
+                        <label for="name"><i class="fas fa-user"></i> Имя</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message"><i class="fas fa-comment"></i> Сообщение</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+                    <p id="form-message" class="error"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h4>О нас</h4>
+                <p>Arbuz.kz — свежие арбузы прямо с грядки. Мы доставляем только лучшее качество!</p>
+            </div>
+            <div class="footer-section contact">
+                <h4>Контакты</h4>
+                <p><a href="mailto:info@arbuz.kz">info@arbuz.kz</a></p>
+                <p>Тел: +7 (707) 123-45-67</p>
+            </div>
+            <div class="footer-section social">
+                <h4>Мы в соцсетях</h4>
+                <div class="social-icons">
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-telegram"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section legal">
+                <p>&copy; 2025 Arbuz.kz. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
